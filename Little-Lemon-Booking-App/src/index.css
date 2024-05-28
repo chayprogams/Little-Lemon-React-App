@@ -1,0 +1,55 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #556b2f; /* Olive green background */
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .text-content h1 {
+    color: #FFD700; /* Gold color for the main heading */
+  }
+  
+  .text-content button,.highlights button {
+    background-color: #FFD700; /* Gold background for the button */
+    color: #556b2f; /* Olive color for the button text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .image-content img {
+    width: 200px; /* Adjust as needed */
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .tpc .price{
+    color:#ee9972
+  }
+  .highlights{
+    gap: 450px;
+    margin-top: 23px;
+    margin-right:45px;
+  }
+  @media (min-width: 768px) {
+    .banner-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .image-content {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+  
