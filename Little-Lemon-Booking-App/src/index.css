@@ -1,23 +1,79 @@
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #556b2f; /* Olive green background */
-    color: white;
-    padding: 0 20px;
+
+.hero {
+    display: flex; /* Enable flexible layout for image and text side-by-side */
+    justify-content: space-between; /* Distribute content horizontally with spacing */
+    align-items: center; /* Align content vertically on all devices */
+    background-color: #F5F5F5; /* Light background for better contrast */
+    padding: 50px; /* Add some padding for visual appeal */
   }
   
-  .banner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 800px; /* Adjust as needed */
-    margin: 0 auto;
+  .hero-content {
+    display: flex; /* Allow stacking content vertically on smaller screens */
+    flex-direction: column; /* Stack content vertically by default */
+    width: 100%; /* Ensure content fills available width */
   }
   
-  .text-content h1 {
-    color: #FFD700; /* Gold color for the main heading */
+  @media (min-width: 768px) { /* For screens wider than 768px (tablets and desktops) */
+    .hero-content {
+      flex-direction: row; /* Switch to side-by-side layout on larger screens */
+    }
+  
+    .text-content {
+      flex: 1; /* Allow text content to expand and fill available space */
+    }
+  
+    .image-content {
+      flex: 1; /* Allow image content to expand and fill available space */
+    }
+  }
+  
+  .text-content {
+    /* text-align: center; Center text content on all devices */
+    margin-bottom: 30px; /* Add some space below text on smaller screens */
+  
+    h1 {
+      font-size: 3rem; /* Adjust heading size as needed */
+      margin: 0; /* Remove default margin for cleaner layout */
+    }
+  
+    h5 {
+      font-size: 1.2rem; /* Adjust subheading size as needed */
+      margin: 0; /* Remove default margin for cleaner layout */
+      line-height: 2.5;
+    }
+  
+    p {
+      font-size: 1rem; /* Adjust paragraph size as needed */
+      margin-bottom: 0px; /* Add some space below paragraph */
+      line-height: 3.5; /* Improve readability with line spacing */
+    }
+    .highlights {
+        padding: 10px; /* Add some padding for visual appeal */
+      }
+      @media (max-width: 768px) {
+        .highlights {
+          flex-direction: column; /* Stack content vertically on small screens */
+        }
+      }
+      
+    button {
+      background-color: #333; /* Darker button color for contrast */
+      color: white; /* White text for better visibility */
+      padding: 10px 20px; /* Adjust button padding */
+      border: none; /* Remove default button border */
+      border-radius: 5px; /* Add rounded corners for aesthetics */
+      cursor: pointer; /* Indicate clickable button */
+    }
+  }
+  
+  .image-content {
+    text-align: center; /* Center image content on all devices */
+  
+    img {
+      max-width: 100%; /* Ensure image scales down on smaller screens */
+      height: auto; /* Maintain image aspect ratio */
+      border-radius: 5px; /* Add rounded corners for aesthetics */
+    }
   }
   
   .text-content button,.highlights button {
@@ -27,13 +83,9 @@
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 10px;
+    margin-left:-7px;
   }
   
-  .image-content img {
-    width: 200px; /* Adjust as needed */
-    border-radius: 5px;
-    margin-top: 20px;
-  }
   .tpc .price{
     color:#ee9972
   }
@@ -42,14 +94,38 @@
     margin-top: 23px;
     margin-right:45px;
   }
-  @media (min-width: 768px) {
-    .banner-content {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .image-content {
-      margin-top: 0;
-      margin-left: 20px;
-    }
+.menu{
+    .btn-primary {
+        background-color: #ffd700;
+        padding: 10px 20px;
+        font-size: 16px;
+        color:black;
+      }
+}
+/* Hero.css */
+/* Hero.css */
+.hero {
+    background-color: #fff8e1; /* Light yellow background */
+    width: 100%;
+    padding: 50px 0; /* Padding to add space vertically */
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .text-content h5 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
   }
   
