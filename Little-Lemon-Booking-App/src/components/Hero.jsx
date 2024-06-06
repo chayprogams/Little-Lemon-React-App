@@ -9,7 +9,7 @@ const Hero = () => {
                 <h1>Little Lemon</h1>
                 <h5>Chicago</h5>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes & served with a modern twist.</p>
-                <Link to="/Booktable" className="btn btn-warning">Reserve a table</Link>
+                <Link to="/Bookslot" className="btn btn-warning">Reserve a table</Link>
               </div>
             </div>
             <div className="col-md-6">

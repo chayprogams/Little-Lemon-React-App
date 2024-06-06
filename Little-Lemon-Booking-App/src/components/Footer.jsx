@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -12,12 +12,12 @@ const Footer = () => {
           </div>
           <div className="col-md-4">
             <ul className="list-unstyled">
-             <a href=''><li>Home</li></a>
-             <a href=''><li>About</li></a>
-             <a href=''><li>Menu</li></a>
+            <Link to={'/'}><li>Home</li></Link>
+           <Link to={'/aboutus'}><li>About us</li></Link>
+           <Link to={'/menu'}>Menu</Link>
              <a href=''><li>Reservations</li></a>
              <a href=''><li>Order Online</li></a>
-             <a href=''><li>Login</li></a>
+            <Link to={'/login'}>Login</Link>
             </ul>
           </div>
           <div className="col-md-4">

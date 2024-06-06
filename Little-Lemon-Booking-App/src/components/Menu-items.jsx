@@ -1,4 +1,4 @@
-import Dynamiccardfetch from "./Dynamiccardfetch";
+import Dynamicitemsfetch from './Dynamicitems';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruck } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,7 +7,7 @@ const Menu = () => {
   return (
     <div className="container my-5">
       <div className="row">
-        {Dynamiccardfetch.map((item, index) => {
+        {Dynamicitemsfetch.slice(0,3).map((item, index) => {
           const { image, Title, description, link, price } = item;
           return (
             <div className="col-lg-4 col-md-6 mb-4" key={index}>
